@@ -1,3 +1,31 @@
+{#DESCRIPTION :       
+    admin: suprimer
+
+    Nom du Bundle: soleilagendaBundle
+    Controller: evenementAgenda
+    Action    : suprimer
+    ----------------------------------------------
+
+    A INTEGRER : 
+        extends "::SousSite/base.html.twig"
+
+    POUR LE LIENS:
+    Route: soleil_agenda_accueil_admin
+      varible:{slug_ev}
+           
+
+    VARIABLES DISPONIBLES:
+        - inscri: ARRAY/OBJ :  i
+                     propriétés : id, nom, genre, tel, mail, datenaissance, dateIsc, slug, adresse, ville, pays,evenementAgenda_id, amount
+  
+    
+                     
+
+    ----------------------------------------------                
+    POUR TESTER : www.eft.com/{slug_ev}/evenement/supprimer
+    ----------------------------------------------
+
+#}
 {% extends "::SousSite/Admin/baseAdmin.html.twig" %}
 
 {% block content %}

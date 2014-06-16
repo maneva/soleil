@@ -1,3 +1,31 @@
+{#DESCRIPTION :       
+    inscription aux evenements
+
+    Nom du Bundle: soleilagendaBundle
+    Controller: Inscription
+    Action    : index
+    ----------------------------------------------
+
+    A INTEGRER : 
+        extends "::SousSite/base.html.twig"
+
+    POUR LE LIENS:
+    Route: soleil_inscription_accueil
+           Paramètre: STRING : slug de la rubrique
+
+    Route l'envoi: POST + soleil_inscription_paiement_confirmation
+           Paramètres: slug: STRING: slug de l'evenement
+           Paramètres: slug: STRING: slug de l'inscription
+
+    VARIABLES DISPONIBLES:
+        - rubriques: ARRAY/OBJ :  l'evenement'
+                     
+
+    ----------------------------------------------                
+    POUR TESTER : www.eft.com/slug de la rubrique
+    ----------------------------------------------
+
+#}
 {% extends "::SousSite/base.html.twig" %}
 
 {% block content %}

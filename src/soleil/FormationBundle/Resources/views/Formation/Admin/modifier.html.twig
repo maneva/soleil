@@ -1,3 +1,26 @@
+{#DESCRIPTION :       
+  admin, modifier une formations 
+
+    Nom du Bundle: soleilArticleBundle
+    Controller: Formation
+    Action    : modifier
+    ----------------------------------------------
+
+    A INTEGRER : 
+        extends "::SousSite/Admin/baseAdmin.html.twig"
+
+    POUR LE LIENS:
+    Route: soleil_formation_modifier_admin
+
+    VARIABLES DISPONIBLES:
+        - formation: obj:  formations
+                     propriétés : id, titreFr, titreEn,textFr; textEn, slug, date, dateEdition
+       
+    ----------------------------------------------                
+    POUR TESTER : www.eft.com/admin/formation/modifier
+    ----------------------------------------------  
+#}
+
 {% extends "::SousSite/Admin/baseAdmin.html.twig" %}
 
 {% block content %}

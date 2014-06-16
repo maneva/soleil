@@ -1,3 +1,29 @@
+{#DESCRIPTION :       
+	confirmation de l'achat 
+
+    Nom du Bundle: soleilArticleBundle
+    Controller: Payement
+    Action    : return
+    ----------------------------------------------
+
+    A INTEGRER : 
+        extends "::SousSite/base.html.twig"
+
+    POUR LE LIENS:
+    Route: soleil_realisation_paiement_return
+          
+
+    VARIABLES DISPONIBLES:
+        - realisation: obj:  realisation
+                     propriétés : id, titreFr, titreEn,textFr; textEn, slug, dimension, prix, vendu, realiserpar, image_id
+        - inscri: obj : inscri
+        			 propriétés : id, nom, genre, tel, mail, datenaissance, dateIsc, slug, adresse, ville, pays,evenementAgenda_id, amount
+  
+    ----------------------------------------------                
+    POUR TESTER : www.eft.com/realisation/achat/paiement/return
+    ----------------------------------------------
+#}
+
 {% extends "::SousSite/base.html.twig" %}
 
 {% block content %}

@@ -1,4 +1,27 @@
+{#DESCRIPTION :       
+     liste des articles
 
+    Nom du Bundle: soleilArticleBundle
+    Controller: Article
+    Action    : article
+    ----------------------------------------------
+
+    A INTEGRER : 
+        extends "::SousSite/base.html.twig"
+
+    POUR LE LIENS:
+    Route: soleil_article_accueil
+          
+
+    VARIABLES DISPONIBLES:
+        - article: array :  article
+                     propriétés : id, titreFr, titreEn, textFr, textEn, date, dateEdition, slug, site_id, image_id, video
+                     
+
+    ----------------------------------------------                
+    POUR TESTER : www.eft.com/article
+    ----------------------------------------------
+#}
 {% for  av in articlesVideo %}
     
      {% if loop.index == 1 %}

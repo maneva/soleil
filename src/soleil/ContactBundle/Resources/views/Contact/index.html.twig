@@ -1,3 +1,27 @@
+{#DESCRIPTION :       
+     envoyer un mail
+
+    Nom du Bundle: soleilArticleBundle
+    Controller: Contact
+    Action    : index
+    ----------------------------------------------
+
+    A INTEGRER : 
+        extends "::SousSite/base.html.twig"
+
+    POUR LE LIENS:
+    Route: soleil_contact_accueil
+          
+
+    VARIABLES DISPONIBLES:
+        - contact: array :  contact
+                     propriétés : id, nom, prenom, tel, gsm, slug, adresse, mail
+
+    ----------------------------------------------                
+    POUR TESTER : www.eft.com/contact}
+    ----------------------------------------------
+#}
+
 {% extends "::SousSite/base.html.twig" %}
 
 {% block content %}

@@ -1,3 +1,22 @@
+{#DESCRIPTION :       
+  admin, liste des formations 
+
+    Nom du Bundle: soleilArticleBundle
+    Controller: Site
+    Action    : menuSousSite
+    ----------------------------------------------
+
+    POUR LE LIENS:
+    Route: admin
+
+    VARIABLES DISPONIBLES:
+        - site: obj: sites
+                     propriétés : id, titreFr, titreEn,textFr; textEn, domaine, image
+       
+    ----------------------------------------------                
+    POUR TESTER : www.eft.com/admin
+    ----------------------------------------------  
+#}
 {% extends "::SousSite/base.html.twig" %}
 
 {% block content %}

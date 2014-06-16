@@ -1,3 +1,28 @@
+{#DESCRIPTION :       
+    admin, voir un article
+
+    Nom du Bundle: soleilArticleBundle
+    Controller: Article
+    Action    : voir
+    ----------------------------------------------
+
+    A INTEGRER : 
+        extends "::SousSite/base.html.twig"
+
+    POUR LE LIENS:
+    Route: soleil_article_voir_admin
+          
+
+    VARIABLES DISPONIBLES:
+        - article: OBJ :  article
+                     propriétés : id, titreFr, titreEn, textFr, textEn, date, dateEdition, slug, site_id, image_id, video
+                     
+
+    ----------------------------------------------                
+    POUR TESTER : www.eft.com/admin/article/{slug}/voir
+    ----------------------------------------------
+#}
+
 {% extends "::SousSite/Admin/baseAdmin.html.twig" %}
 
 {% block content %}

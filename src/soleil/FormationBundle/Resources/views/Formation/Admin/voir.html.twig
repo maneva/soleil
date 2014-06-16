@@ -1,3 +1,25 @@
+{#DESCRIPTION :       
+  admin, detail formations 
+
+    Nom du Bundle: soleilArticleBundle
+    Controller: Formation
+    Action    : voir
+    ----------------------------------------------
+
+    A INTEGRER : 
+        extends "::SousSite/Admin/baseAdmin.html.twig"
+
+    POUR LE LIENS:
+    Route: soleil_formation_voir_admin
+
+    VARIABLES DISPONIBLES:
+        - formation: obj:  formations
+                     propriétés : id, titreFr, titreEn,textFr; textEn, slug, date, dateEdition
+       
+    ----------------------------------------------                
+    POUR TESTER : www.eft.com/admin/formation/voir
+    ----------------------------------------------  
+#}
 {% extends "::SousSite/Admin/baseAdmin.html.twig" %}
 
 {% block content %}

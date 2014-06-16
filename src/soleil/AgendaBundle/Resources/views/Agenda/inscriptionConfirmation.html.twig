@@ -1,3 +1,34 @@
+{#DESCRIPTION :       
+    confirmer l'inscription
+
+    Nom du Bundle: soleilagendaBundle
+    Controller: Inscription
+    Action    : index
+    ----------------------------------------------
+
+    A INTEGRER : 
+        extends "::SousSite/base.html.twig"
+
+    POUR LE LIENS:
+    Route: soleil_inscription_paiement_confirmation
+           Paramètre: STRING : slug de la rubrique
+
+    Route l'envoi: POST + soleil_inscription_paiement_confirmation
+           Paramètres: slug: STRING: slug de l'evenement
+           Paramètres: slug: STRING: slug de l'inscription
+
+    VARIABLES DISPONIBLES:
+        - inscri: ARRAY/OBJ :  inscri
+                     propriétés : id, nom, genre, tel, mail, datenaissance, dateIsc, slug, adresse, ville, pays,evenementAgenda_id, amount
+	
+		- evenementAgenda: ARRAY/OBJ :  inscri.evenementAgenda
+                     id, nomFr, dateDeb, dateFin, slug,nbMax, nbInsc, descriptionFr, formation_id, site_id, prix, nbJour.
+
+    ----------------------------------------------                
+    POUR TESTER : www.eft.com/slug de la rubrique
+    ----------------------------------------------
+#}
+
 {% extends "::SousSite/base.html.twig" %}
 
 {% block content %}

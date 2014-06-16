@@ -1,6 +1,30 @@
-
-
 {% extends "::SousSite/base.html.twig" %}
+
+{#DESCRIPTION :       
+  page des realisations
+
+    Nom du Bundle: soleilArticleBundle
+    Controller: Realisation
+    Action    : index
+    ----------------------------------------------
+
+    A INTEGRER : 
+        extends "::SousSite/base.html.twig"
+
+    POUR LE LIENS:
+    Route: soleil_realisation_accueil
+          
+
+    VARIABLES DISPONIBLES:
+        - realisation: array :  realisation
+                     propriétés : id, titreFr, titreEn,textFr; textEn, slug, dimension, prix, vendu, realiserpar, image_id
+    ----------------------------------------------                
+    POUR TESTER : www.eft.com/realisation
+    ----------------------------------------------
+#}
+
+
+
 
 {% block content %}
   

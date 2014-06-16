@@ -1,3 +1,28 @@
+{#DESCRIPTION :       
+     liste des articles
+
+    Nom du Bundle: soleilArticleBundle
+    Controller: Article
+    Action    : voiplus
+    ----------------------------------------------
+
+    A INTEGRER : 
+        extends "::SousSite/base.html.twig"
+
+    POUR LE LIENS:
+    Route: soleil_article_voir_plus
+          
+
+    VARIABLES DISPONIBLES:
+        - article: array :  article
+                     propriétés : id, titreFr, titreEn, textFr, textEn, date, dateEdition, slug, site_id, image_id, video
+                     
+
+    ----------------------------------------------                
+    POUR TESTER : www.eft.com/article/{voirplus}
+    ----------------------------------------------
+#}
+
 {% extends "::SousSite/base.html.twig" %}
 
 {% block content %}

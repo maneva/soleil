@@ -1,3 +1,27 @@
+DESCRIPTION :       
+  admin, voir une realisation
+
+    Nom du Bundle: soleilArticleBundle
+    Controller: Commande
+    Action    : voir
+    ----------------------------------------------
+
+    A INTEGRER : 
+        extends "::SousSite/base.html.twig"
+
+    POUR LE LIENS:
+    Route: soleil_commande_voir_admin
+          
+
+    VARIABLES DISPONIBLES:
+        - commande: obj:  commande
+                     propriétés : id, titreFr, titreEn,textFr; textEn, slug, dimension, prix, vendu, realiserpar, image_id
+       
+    ----------------------------------------------                
+    POUR TESTER : www.eft.com/admin/commande/voir/slug
+    ----------------------------------------------
+
+
 {% extends "::SousSite/Admin/baseAdmin.html.twig" %}
 
 {% block content %}

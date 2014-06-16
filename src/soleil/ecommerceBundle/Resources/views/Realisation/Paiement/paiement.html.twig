@@ -1,3 +1,29 @@
+{#DESCRIPTION :       
+ resumé de l'achat avant redirection vers paypal 
+
+    Nom du Bundle: soleilArticleBundle
+    Controller: Payement
+    Action    : detail
+    ----------------------------------------------
+
+    A INTEGRER : 
+        extends "::SousSite/base.html.twig"
+
+    POUR LE LIENS:
+    Route: soleil_realisation_paiement_details
+          
+
+    VARIABLES DISPONIBLES:
+        - realisation: obj:  realisation
+                     propriétés : id, titreFr, titreEn,textFr; textEn, slug, dimension, prix, vendu, realiserpar, image_id
+        - inscri: obj : inscri
+        			 propriétés : id, nom, genre, tel, mail, datenaissance, dateIsc, slug, adresse, ville, pays,evenementAgenda_id, amount
+  
+    ----------------------------------------------                
+    POUR TESTER : www.eft.com/realisation/achat/paiement/details/transaction/slug_realisation
+    ----------------------------------------------
+#}
+
 {% extends "::SousSite/base.html.twig" %}
 
 {% block content %}

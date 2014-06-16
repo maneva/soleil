@@ -1,3 +1,28 @@
+{#DESCRIPTION :       
+    admin, supprimer un article
+
+    Nom du Bundle: soleilArticleBundle
+    Controller: Article
+    Action    : modifier
+    ----------------------------------------------
+
+    A INTEGRER : 
+        extends "::SousSite/Admin/base.html.twig"
+
+    POUR LE LIENS:
+    Route: soleil_article_modifier_admin
+          
+
+    VARIABLES DISPONIBLES:
+        - article: OBJ :  article
+                     propriétés : id, titreFr, titreEn, textFr, textEn, date, dateEdition, slug, site_id, image_id, video
+                     
+
+    ----------------------------------------------                
+    POUR TESTER : www.eft.com/admin/article/{slug}/modifier
+    ----------------------------------------------
+#}
+
 {% extends "::SousSite/Admin/baseAdmin.html.twig" %}
 
 {% block content %}
